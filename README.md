@@ -71,21 +71,10 @@ Steps for running the project:
    * python -m venv env
    * .\env\Scripts\activate
 3. After running these commands, the environment will be activated. Now we have install the requires libraries of python. So run the following pip install commands:
-   * pip install django
-   * pip install requests
-   * pip install cryptography
-   * pip install mysql-connector-python
-   * pip install pillow
-   * pip install pymysql
+   * pip install -r requirements.txt
 4. After installing all these libraries, we need to create a database in mysql and give it's details to the settings.py file in Peer-to-Peer Carpooling>carpool>carpool folder. The same details should be added in the views.py file in Major 2>carpool>website folder.
 5. Ater creating the database, run the following commands to run the server of Django:
-   * cd carpool
    * python manage.py makemigrations
-   * python manage.py sqlmigrate website 0001
-   * python manage.py sqlmigrate website 0002
-   * python manage.py sqlmigrate website 0003
-   * python manage.py sqlmigrate website 0004
-   * python manage.py sqlmigrate website 0005
    * python manage.py migrate
    * python manage.py runserver                //This command runs the Django server and for closing the server 'Ctrl+C' should be pressed in the command prompt terminal of VS Code.
 6. The above commands will create the required tables in the database details provided by you and then run the server i.e. http://127.0.0.1:8000/ in your chrome browser.
