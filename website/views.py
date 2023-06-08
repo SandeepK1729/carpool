@@ -30,7 +30,7 @@ def Register(request):
         else:
             messages.warning(request, "Please correct the error below.")
 
-    return render(request, "register.html", {"form": form})
+    return render(request, "registration/register.html", {"form": form})
 
 
 #Function to help user contact the admin
